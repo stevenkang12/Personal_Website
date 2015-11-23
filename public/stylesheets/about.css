@@ -1,0 +1,86 @@
+.about-background {
+	height: 100%;
+	width: 100%;
+}
+
+.about-left-pane-image {
+	width: 30%;
+	height: 100%;
+	background-image: url("../images/calcoteating.png");
+	background-size: cover;
+	position: fixed;
+}
+
+.about-right-pane-text {
+	width: 70%;
+	height: 100%;
+	margin-left: 30%;
+}
+
+.about-pane-container {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.about-pane-title h1 {
+	font-size: 35px;
+}
+
+.about-pane-title h2 {
+	font-size: 25px;
+}
+
+.about-pane-description p {
+	font-size: 16px;
+	color: #A0A0A0;
+}
+
+.about-pane-description a {
+	text-decoration: none;
+	color: #48c9ea;
+}
+
+.about-pane-description hr {
+	display: block; height: 3px;
+    border: 0; border-top: 3px solid #e0e0e0;
+    margin: 3em 0; padding: 0;
+}
+
+.about-popup-question {
+	margin-top: 15px;
+	margin-left: 15px;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+#about-popup-answer {
+	display:none;
+}
+.about-popup-question p {
+	color: white;
+	margin: 0;
+}
+
+/* Add blog parts of the about page. */
+#blog-title {
+	padding-top: 15px;
+}
+
+.blog-container p { color: black; margin: 6px 0px;  }
+.blog-container {
+	margin-bottom: 15px;
+	padding: 10px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #A0A0A0;
+}
+.blog-name { font-weight: bold; font-size: 19px; }
+.blog-date { color: #A0A0A0; font-style: italic; }
+.blog-description { color: #A0A0A0; }
+.blog-list { margin-top: 30px; }

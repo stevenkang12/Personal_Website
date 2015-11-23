@@ -1,0 +1,43 @@
+.resume-background {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.resume-iframe {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 9009;
+}
+
+#resume-download-button {
+	position:absolute;
+	z-index: 9010;
+	top: 20px;
+	left: 20px;
+	cursor: pointer;
+}
+
+.download-button-style h1 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.download-button-style {
+	border-color: #26759e;
+	border-width: 0px 0px 0px 25px;
+	border-style: solid;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 12px;
+	font-size: 25px;
+	font-family: arial, helvetica, sans-serif;
+	padding: 10px 30px 10px 30px;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3093c7;
+}

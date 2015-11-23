@@ -1,0 +1,98 @@
+.research-container {
+	width: 100%;
+	position: absolute;
+}
+
+.research-inner-container {
+	width: 50%;
+	height: 100%;
+	padding-top: 70px;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.research-project-container {
+	width:100%;
+	height: 100%;
+	margin-bottom: 150px;
+}
+
+.research-title-screen {
+	margin-bottom: 7%;
+}
+
+.research-project-item {
+	background: #f4f4f4;
+	box-shadow: 0px 5px 5px -5px gray;
+	margin-top: 30px;
+	border-radius: 9px;
+	/* cursor: pointer; */
+}
+
+.research-picture {
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+}
+
+.research-text {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.research-project-item h1 {
+	font-weight: 100;
+	font-size: 14px;
+  	font-weight: 300;
+  	font-family: 'Lato', sans-serif;
+  	line-height: 1.1;
+}
+
+.h1caps { text-transform: uppercase; color: #606060;}
+.authors { color: #A4A4A4; font-size: 12px !important;}
+
+#blindspot-research-picture {
+	background-image: url("../images/blindspot-pic.png");
+	background-size:cover;
+	background-position: center center;
+}
+
+#crowd-research-picture {
+	background-image: url("../images/crowd-dark-pic.png");
+	background-size:cover;
+	background-position: top center;
+}
+
+#robot-research-picture {
+	background-image: url("../images/robot-pic.png");
+	background-size:cover;
+	background-position: top center;
+}
+
+#patient-research-picture {
+	background-image: url("../images/tmp-pic.png");
+	background-size:cover;
+	background-position: top center;
+}
+
+#anglican-research-picture {
+	background-image: url("../images/anglican-pic.png");
+	background-size:cover;
+	background-position: top center;
+}
+
+#space-research-picture {
+	background-image: url("../images/space-pic.png");
+	background-size:cover;
+	background-position: center center;
+}
+
+#magnetic-research-picture {
+	background-image: url("../images/magnetic-pic.png");
+	background-size:cover;
+	background-position: top center;
+}
