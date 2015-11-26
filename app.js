@@ -7,12 +7,12 @@ var configure = require('./config.js');
 // Import our controllers
 var indexControllers = require('./controllers/index.js');
 var aboutControllers = require('./controllers/about.js');
-var researchControllers = require('./controllers/research.js');
+// var researchControllers = require('./controllers/research.js');
 var projectsControllers = require('./controllers/projects.js');
-var jobsControllers = require('./controllers/jobs.js');
-var talksControllers = require('./controllers/talks.js');
-var doodlesControllers = require('./controllers/doodles.js');
-var randomControllers = require('./controllers/random.js');
+// var jobsControllers = require('./controllers/jobs.js');
+// var talksControllers = require('./controllers/talks.js');
+// var doodlesControllers = require('./controllers/doodles.js');
+// var randomControllers = require('./controllers/random.js');
 
 // Create our express app
 var app = express();
