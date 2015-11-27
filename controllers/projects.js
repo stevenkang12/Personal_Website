@@ -15,5 +15,5 @@ function listProjects (request, response) {
 }
 
 module.exports = {
-  listProjects: listProjects
+  listProjects: listProjects,
 };

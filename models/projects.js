@@ -9,7 +9,8 @@ var allProjects = [
     description: 'App that focuses on filtered virality of photos and Vine-like videos, allowing users to see content that truly have merit',
     website: 'picme.io'
   }
+];
 
 module.exports = {
-  all: links,
+  all: allProjects,
 };

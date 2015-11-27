@@ -9,7 +9,7 @@ function index (request, response) {
     'name'  : 'Steven Kang',
     'links' : links.all
   };
-  response.render('index.html', indexData);
+  response.render('home.html', indexData);
 }
 
 module.exports = {
