@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <!-- css inclusions. -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <link rel='stylesheet' href='/stylesheets/navbar.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans' type='text/css'>
+    <meta name="google-site-verification" content="bStnDdxWK7iCGz7PNTE8m68lxx54yNvb21GUdr4a2nI" />
+    <!-- for extra stylesheet customizations  -->
+    {% block extralinks %}
+    {% endblock %}
+    <!-- favicon link. -->
+    <link rel='icon' href='/images/favicon.png' />
+    <!-- client-side javascript. -->
+    <script src="/js/jquery-1.11.2.min.js"></script>
+	  <script src="/js/responsive.js"></script>
+    <!-- for extra js customizations  -->
+    {% block extrajs %}
+    {% endblock %}
+  </head>
+
+	<body class='container'>
+
+    {% block navbar %}
+      <!-- Condensed navigation menu (responsive). -->
+      <div class="navbar-condensed-menu" id="specialreplace">
+        <div class="navbar-condensed-title"><h1>Menu</h1></div>
+        <div class="navbar-condensed-options">
+          {% for item, link in links %}
+            <a href='{{ link }}'><h1>{{ item }}</h1></a><hr>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="home-menu-container" id="specialhover">
+    		<header id="header">
+    			<div class="header-menu-container">
+    				<div id="header-menu-logo">
+            	<h1 class="logo logo-text">{{ name }}</h1>
+          	</div>
+          	<div id="header-nav-container">
+               <nav class="header-nav-menu">
+    						<ul>
+                  {% for item, link in links %}
+                    <li class="header-nav-page-tab"><a class="header-tab-text" href="{{ link }}">{{ item }}</a></li>
+                  {% endfor %}
+    						</ul>
+    					</nav>
+    					<div class="navbar-condensed-button">
+    						<div class="navbar-black-line first-black-line"></div>
+    						<div class="navbar-black-line"></div>
+    						<div class="navbar-black-line"></div>
+    					</div>
+            </div>
+    			</div>
+        </header>
+    	</div>
+    {% endblock %}
+
+    {% block mainContent %}
+      <section>Hello World!</section>
+    {% endblock %}
+  </body>
+  <!-- Insert extra javascript -->
+  {% block extrascript %}
+  {% endblock %}
+
+  <!-- Addiitional javascript -->
+  <script>
+    // Handle initial loading.
+    $(document).ready(function() {
+    	navbarSetup(window);
+    });
+    // Handle changes on scroll.
+    $(window).scroll(function(e){
+      if ($(this).scrollTop() > 100) { // choose the value you want.
+          $('#specialhover:visible').slideUp('fast');
+          $('#specialreplace').show('fast');
+      } else {
+          $('#specialhover:hidden').slideDown('fast');
+          $('#specialreplace').hide('fast');
+      }
+  	});
+    // Handle changes on resize.
+    $(window).resize(function() { navbarResize(window); });
+    // Add google analytics.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-70300059-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

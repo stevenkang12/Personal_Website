@@ -1,3 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<title>{{ title }}</title>
+    <!-- client-side javascript. -->
+    <script src="/js/jquery-1.11.2.min.js"></script>
+	<script src="/js/responsive.js"></script>
+    <!-- for extra js customizations  -->
+    {% block extrajs %}
+    {% endblock %}
+  </head>
+
+  <body>
+    <div>
+       {% for item, link in links %}
+          <a href='{{ link }}'><h1>{{ item }}</h1></a><hr>
+	   {% endfor %}
+	</div>
+  </body>
+</html>
