@@ -2,19 +2,40 @@
 <html>
   <head>
   	<title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <!-- client-side javascript. -->
     <script src="/js/jquery-1.11.2.min.js"></script>
-	<script src="/js/responsive.js"></script>
+	  <script src="/js/responsive.js"></script>
     <!-- for extra js customizations  -->
     {% block extrajs %}
     {% endblock %}
   </head>
 
   <body>
-    <div>
-       {% for item, link in links %}
-          <a href='{{ link }}'><h1>{{ item }}</h1></a><hr>
-	   {% endfor %}
-	</div>
+    <div class="home-menu-container" id="specialhover">
+    <!-- where is this header id located in the stylesheet? -->
+      <header id="header"> 
+        <div class="header-menu-container">
+          <div id="header-menu-logo">
+            <h1 class="logo logo-text">Steven Kang</h1>
+          </div>
+          <div id="header-nav-container">
+            <nav class="header-nav-menu">
+              <ul>
+                {% for item, link in links %}
+                  <li class="header-nav-page-tab"><a class="header-tab-text" href="{{ link }}">{{ item }}</a></li>
+                {% endfor %}
+                <!-- Why is there a line dividing? -->
+              </ul>
+            </nav>
+<!--             <div class="navbar-condensed-button">
+                <div class="navbar-black-line first-black-line"></div>
+                <div class="navbar-black-line"></div>
+                <div class="navbar-black-line"></div>
+            </div> -->
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
 </html>

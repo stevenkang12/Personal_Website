@@ -3,7 +3,8 @@
 var links = {
   'Home'     : '/',
   'About'    : '/about',
-  'Projects'    : '/projects'
+  'Projects' : '/projects',
+  'Resume'   : '/resume'
 }
 
 module.exports = {

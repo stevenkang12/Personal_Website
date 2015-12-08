@@ -1,87 +1,5 @@
 /* The CSS file for the home page (index.html) */
 
-body {
-	margin: 0;
-}
-
-h1 {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: .5px;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 20px;
-}
-
-h2 {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: .5px;
-	font-weight: 300;
-	font-style: normal;
-}
-
-p {
-	font-family: 'PT Sans', sans-serif;
-	letter-spacing: .5px;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 14px;
-}
-
-nav ul, nav ol {
-	list-style: none;
-	list-style-image: none;
-	margin: 0;
-	padding: 0;
-}
-
-.home-popup-question {
-	position: absolute;
-	top: 16%;
-	left: 37%;
-	padding: 12px 10px;
-	width: 200px;
-	text-align: center;
-	border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    z-index: 9011;
-}
-
-.thought-bubble-middle {
-	top: 19%;
-	left: 53%;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    z-index: 9011;
-}
-
-.thought-bubble-small {
-	top: 22%;
-	left: 56%;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    z-index: 9011;
-}
-
-.home-popup-question p {
-	color: black;
-	margin: 0;
-}
-
-#home-popup-answer {
-	padding-left: 7px;
-	padding-right: 7px;
-	display:none;
-}
-
 .header-tab-text {
 	text-decoration: none;
 	color: #a8a8a8;
@@ -97,25 +15,6 @@ nav ul, nav ol {
 
 .logo-text {
 	text-transform: uppercase;
-}
-
-.home-loading {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-size: cover;
-	background-color: #00AEEF;
-	z-index: 10000;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.home-loading-picture {
-	background-image: url('../images/octoload.gif');
-	height: 80%;
-	width: 65%;
-  margin: 0 auto;
-	background-repeat: no-repeat;
 }
 
 .home-loading-caption {
@@ -142,7 +41,7 @@ nav ul, nav ol {
 .home-menu-container {
 	width: 100%;
 	position: fixed;
-	bottom: 0;
+/*	bottom: 0;*/
 	transition: left .3s ease-in-out;
 	left: 0;
 	overflow: hidden;
@@ -189,61 +88,4 @@ nav ul, nav ol {
 #header-nav-container .header-nav-menu ul {
 	margin: 0;
 	padding-left: 33px;
-}
-
-.home-personal-logo {
-	color: white;
-	position: fixed;
-	overflow: hidden;
-	z-index: 9009;
-}
-
-.personal-logo-mini {
-	left: 455px;
-	bottom: 100px;
-}
-
-.personal-logo-tiny {
-	left: 530px;
-	bottom: 95px;
-}
-
-.personal-logo-small {
-	left: 650px;
-	bottom: 80px;
-}
-
-.personal-logo-medium {
-	left: 860px;
-	bottom: 67px;
-}
-
-.personal-logo-large {
-	left: 1190px;
-	bottom: 55px;
-}
-
-.home-personal-logo h1 {
-	letter-spacing: .5px;
-	margin: 0;
-}
-
-.personal-logo-mini h1 {
-	font-size: 20px;
-}
-
-.personal-logo-tiny h1 {
-	font-size: 36px;
-}
-
-.personal-logo-small h1 {
-	font-size: 70px;
-}
-
-.personal-logo-medium h1 {
-	font-size: 120px;
-}
-
-.personal-logo-large h1 {
-	font-size: 200px;
 }

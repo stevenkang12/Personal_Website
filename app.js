@@ -8,6 +8,7 @@ var configure = require('./config.js');
 var homeControllers = require('./controllers/home.js');
 var aboutControllers = require('./controllers/about.js');
 var projectsControllers = require('./controllers/projects.js');
+var resumeControllers = require('./controllers/resume.js');
 
 // Create our express app
 var app = express();
@@ -23,8 +24,6 @@ wakeup.keeplive();
 app.get('/', homeControllers.index);
 app.get('/about', aboutControllers.about);
 app.get('/projects', projectsControllers.listProjects);
-
-// Additional random ones.
-// app.get('/resume', randomControllers.resume);
+app.get('/resume', resumeControllers.resume);
 
 module.exports = app;
