@@ -83,6 +83,20 @@ h1 {
 /*	border-top: 1px solid #dedede;*/
 }
 
+.navbar-height {
+	position: relative;
+	height:76px;
+	display: block;
+	width: 100%;
+}
+
+.extra-height {
+	position: relative;
+	height:38px;
+	display: block;
+	width: 100%;
+}
+
 #header-menu-logo {
 	display: inline-block;
 	vertical-align: middle;
@@ -119,11 +133,52 @@ h1 {
 	padding-left: 33px;
 }
 
-.circular {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background-image: url("../images/selfie.jpg");
+#my-face {
+	width: 34%;
+/*    border-width: 1 1 2px;
+    border-style: solid;*/
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    /*what is margin? what if i did margin instead of padding??*/
+    margin-top: 38px;
+    margin-left: 70px;
+    padding-bottom: 50px;
+
 }
+
+#face-pic {
+    position: relative;
+}
+
+#face-photo {
+	padding-top: 20px;
+}
+
+#home-greeting1 {
+	color: rgba(255, 255, 255, .8);
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 22px;
+	padding: 5px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+#home-greeting2 {
+	color: rgba(255, 255, 255, .8);
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	padding: 5px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+
+
+/*img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}*/
