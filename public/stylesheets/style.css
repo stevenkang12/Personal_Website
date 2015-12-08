@@ -1,5 +1,23 @@
 /* The CSS file for the home page (index.html) */
 
+/*Why can't I align my text to the right???????*/
+
+body {
+	margin: 0;
+}
+
+h1 {
+	/*wow Mike just picked the #1 font on the list*/
+	font-family: 'Montserrat', sans-serif;
+/*	font-family: 'Kreon', sans-serif;*/
+/*	font-family: 'Italiana', sans-serif;*/
+
+	letter-spacing: .75px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+}
+
 .header-tab-text {
 	text-decoration: none;
 	color: #a8a8a8;
@@ -11,6 +29,9 @@
 
 .header-tab-text:hover {
     color: #48c9ea;
+/*    text-decoration: underline;*/
+	border-width: 0 0 2px;
+    border-style: solid;
 }
 
 .logo-text {
@@ -33,7 +54,10 @@
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-image: url("../images/imonaboat.png");
+/*	background-image: url("../images/yhack_photo1.jpg");*/
+	background-image: url("../images/yale_lamp_post.jpg");
+/*	background-image: url("../images/yale_old_campus.jpg");*/
+	/*background-image: url("../images/yale_calhoun_college.jpg");*/
 	background-size: cover;
 	background-position: center;
 }
@@ -46,17 +70,17 @@
 	left: 0;
 	overflow: hidden;
 	z-index: 9009;
-	line-height: 1;
+/*	line-height: 1;*/
 	letter-spacing: 0;
-	border-top: 1px solid #dedede;
+/*	border-top: 1px solid #dedede;*/
 }
 
 .home-menu-container header {
 	display: block;
-	padding: 30px 0;
+	padding: 15px 0;
 	position: relative;
 	background-color: #fff;
-	border-top: 1px solid #dedede;
+/*	border-top: 1px solid #dedede;*/
 }
 
 #header-menu-logo {
@@ -68,19 +92,24 @@
 #header-nav-container {
 	display: inline-block;
 	vertical-align: middle;
-	text-align: left;
+/*	text-align: left;*/
+	text-align: right;
 	padding-left: 20px;
+/*	padding-right: 20px;*/
 }
 
 #header-nav-container .header-nav-menu ul li {
 	display: inline-block;
 	margin: 0;
-	margin-right: 50px;
+	vertical-align: middle;
+/*	margin-right: 50px;*/
+	margin-left: 50px;
 	position: relative;
 	text-transform: uppercase;
 	font-size: 15px;
-	font-family: 'PT Sans', sans-serif;
-	letter-spacing: .5px;
+/*	font-family: 'PT Sans', sans-serif;*/
+	font-family: 'Italiana', sans-serif;
+	letter-spacing: .75px;
 	font-weight: 300;
 	font-style: normal;
 }
@@ -88,4 +117,13 @@
 #header-nav-container .header-nav-menu ul {
 	margin: 0;
 	padding-left: 33px;
+}
+
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-image: url("../images/selfie.jpg");
 }

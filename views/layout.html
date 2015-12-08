@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    {% block navbar %}
     <div class="home-menu-container" id="specialhover">
     <!-- where is this header id located in the stylesheet? -->
       <header id="header"> 
@@ -25,7 +26,6 @@
                 {% for item, link in links %}
                   <li class="header-nav-page-tab"><a class="header-tab-text" href="{{ link }}">{{ item }}</a></li>
                 {% endfor %}
-                <!-- Why is there a line dividing? -->
               </ul>
             </nav>
 <!--             <div class="navbar-condensed-button">
@@ -37,5 +37,10 @@
         </div>
       </header>
     </div>
+    {% endblock %}
+    <div class="circular"></div>
+    {% block mainContent %}
+      <section>Hello World!</section>
+    {% endblock %}
   </body>
 </html>
