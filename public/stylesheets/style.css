@@ -1,9 +1,8 @@
-/* The CSS file for the home page (index.html) */
+/* The CSS file for the home page (home.html) */
 
-/*Why can't I align my text to the right???????*/
-
-body {
-	margin: 0;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -97,6 +96,21 @@ h1 {
 	width: 100%;
 }
 
+.social-icons {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.social-links {
+	text-decoration: none;
+}
+
+.default-text {
+	color: #a8a8a8;
+	font-family: 'Montserrat', sans-serif;
+	margin: 30px;
+}
+
 #header-menu-logo {
 	display: inline-block;
 	vertical-align: middle;
@@ -135,11 +149,8 @@ h1 {
 
 #my-face {
 	width: 34%;
-/*    border-width: 1 1 2px;
-    border-style: solid;*/
     position: relative;
     background-color: rgba(0, 0, 0, 0.6);
-    /*what is margin? what if i did margin instead of padding??*/
     margin-top: 38px;
     margin-left: 70px;
     padding-bottom: 50px;
@@ -174,11 +185,43 @@ h1 {
 	margin-left: 10px;
 }
 
+#buttons {
+	position:absolute;
+	display: inline-block;
+	right: 15px;
+	vertical-align: middle;
+	padding-top: 5px;
+}
 
+#buttons-image {
+/*	vertical-align: middle;*/
+}
 
-/*img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-}*/
+#about-image {
+	/*actually i should have the photo be set and then have the words part be flexible*/
+	width: 40%;
+	height: 100%;
+	/*position: fixed;*/
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#about-title {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	margin: 30px;
+	letter-spacing: .75px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+}
+
+#about-summary {
+	width: 60%;
+	height: 100%;
+	/*position: fixed;*/
+	position: relative;
+	display: block;
+	float: right;
+	background-color: rgba(0, 0, 0, 0.8);
+}

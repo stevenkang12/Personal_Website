@@ -1,2 +1,15 @@
-<p>I'm {{ name }} and this is my website!</p>
+{% extends "layout.html" %}
+
+{% block mainContent %}
+<div class="home-container">
+	<div class="navbar-height"></div>
+	<div id="about-image">
+<!-- 		<p id="face-photo" style="text-align:center;"><img id="face-pic" src="images/selfie_circle.png" align="middle" height="250" width="250"></p> -->
+	</div>
+	<div id="about-summary">
+	<p id="about-title">Hi, nice to meet you!</p>
+	<p class="default-text">Hi! I'm Mike Wu! I'm a Computer Science student studying at Yale University. I'm a San Diego native, an avid tennis fan, and a curious mind. I've got a passion for exploring new projects and seeing my ideas materialize. Lately, I've been really interested in machine learning and its applications in the real world, trying to find a nice balance of theory and entrepreneurship.</p>
+	</div>
+</div>
+{% endblock %}
 
