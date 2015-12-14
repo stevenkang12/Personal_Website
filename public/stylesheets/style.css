@@ -69,9 +69,9 @@ h1 {
 	left: 0;
 	overflow: hidden;
 	z-index: 9009;
-/*	line-height: 1;*/
+	line-height: 1;
 	letter-spacing: 0;
-/*	border-top: 1px solid #dedede;*/
+	border-bottom: 1px solid #dedede;
 }
 
 .home-menu-container header {
@@ -79,7 +79,7 @@ h1 {
 	padding: 15px 0;
 	position: relative;
 	background-color: #fff;
-/*	border-top: 1px solid #dedede;*/
+	border-bottom: 1px solid #dedede;
 }
 
 .navbar-height {
@@ -107,8 +107,9 @@ h1 {
 
 .default-text {
 	color: #a8a8a8;
-	font-family: 'Montserrat', sans-serif;
-	margin: 30px;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'PT Sans', sans-serif;
+	margin: 40px;
 }
 
 #header-menu-logo {
@@ -167,7 +168,8 @@ h1 {
 
 #home-greeting1 {
 	color: rgba(255, 255, 255, .8);
-	font-family: 'Lato', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
 	font-size: 22px;
 	padding: 5px;
@@ -178,7 +180,8 @@ h1 {
 #home-greeting2 {
 	color: rgba(255, 255, 255, .8);
 	font-family: 'Lato', sans-serif;
-	font-style: normal;
+/*	font-style: normal;*/
+	font-weight: 300;
 	font-size: 18px;
 	padding: 5px;
 	padding-left: 10px;
@@ -203,13 +206,13 @@ h1 {
 	height: 100%;
 	/*position: fixed;*/
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("../images/yhack_photo2.jpg");
 }
 
 #about-title {
 	color: #000000;
 	font-family: 'Montserrat', sans-serif;
-	margin: 30px;
+	margin: 40px;
 	letter-spacing: .75px;
 	font-weight: 300;
 	font-style: normal;
@@ -223,5 +226,4 @@ h1 {
 	position: relative;
 	display: block;
 	float: right;
-	background-color: rgba(0, 0, 0, 0.8);
 }
