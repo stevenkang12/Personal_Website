@@ -1,7 +1,10 @@
+
+
 .projects-container {
 	width: 100%;
 	position: absolute;
 	margin-bottom: 8%;
+/*	background-color: blue;*/
 }
 
 .projects-inner-container {
@@ -10,11 +13,14 @@
 	padding-top: 70px;
 	max-width: 650px;
 	margin: 0 auto;
+/*	background-color: red;*/
 }
+
 
 .projects-project-container {
 	width:100%;
 	height: 100%;
+/*	background-color: black;*/
 }
 
 .internship-inner-container {
@@ -40,7 +46,7 @@
 .no-padding {
 	width: 100% !important;
 	padding: 0px !important;
-}
+}lesa
 
 .special-padding {
 	padding-left: 5%;
@@ -68,20 +74,9 @@
 	padding-bottom: 30px;
 }
 
-#edison-project-picture {
-	background-image: url("../images/edison-pic.png");
-	background-size:cover;
-	background-position: center center;
-}
 
-#penpal-project-picture {
-	background-image: url("../images/penpal-pic.png");
-	background-size:cover;
-	background-position: center center;
-}
-
-#aflume-project-picture {
-	background-image: url("../images/aflume-pic.png");
+#picme-project-picture {
+	background-image: url("../images/picme-pic.png");
 	background-size:cover;
 	background-position: center center;
 }
@@ -92,60 +87,11 @@
 	background-position: top center;
 }
 
-#codeblue-project-picture {
-	background-image: url("../images/codeblue-pic.png");
-	background-size:cover;
-	background-position: top center;
-}
-
-#finance-project-picture {
-	background-image: url("../images/finance-pic.png");
-	background-size:cover;
-	background-position: top center;
-}
-
-#airbox-project-picture {
-	background-image: url("../images/airbox-dark-pic.png");
+#freedomforum-project-picture {
+	background-image: url("../images/freedomforum-pic.png");
 	background-size:cover;
 	background-position: center center;
 }
-
-#kg-project-picture {
-	background-image: url("../images/kg-pic.png");
-	background-size:cover;
-	background-position: center center;
-}
-
-#seemail-project-picture {
-	background-image: url("../images/seemail-pic.png");
-	background-size:cover;
-	background-position: center center;
-}
-
-#som-project-picture {
-	background-image: url("../images/som-pic.png");
-	background-size:cover;
-	background-position: center;
-}
-
-#ms-project-picture {
-	background-image: url("../images/ms-pic.jpg");
-	background-size:cover;
-	background-position: center;
-}
-
-#isisph-project-picture {
-	background-image: url("../images/isisph-pic.png");
-	background-size:cover;
-	background-position: top center;
-}
-
-#sdsc-project-picture {
-	background-image: url("../images/avp_activation.jpg");
-	background-size:cover;
-	background-position: center center;
-}
-
 
 .projects-project-item hr {
     border: 0;
@@ -159,6 +105,10 @@
   	font-weight: 300;
   	font-family: 'Lato', sans-serif;
   	line-height: 1.1;
+}
+
+.project-description-text {
+	font-family: 'PT Sans', sans-serif;
 }
 
 .h1caps { text-transform: uppercase; color: #606060;}

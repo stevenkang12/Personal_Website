@@ -1,8 +1,31 @@
-<div>
-  {% for project in projects %}
-    <h1 class="h1caps">{{ project.name }}</h1>
-    <h1 class="dates">{{ project.time }}</h1>
-    <p>{{ project.description }}</p>
-    <p>Check out more info <a href="http://picme.io">here</a></p>
-  {% endfor %}
-</div>
+{% extends "layout.html" %}
+
+{% block extralinks %}
+  <link rel='stylesheet' href='/stylesheets/projects.css' />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato' type='text/css'>
+{% endblock %}
+
+{% block mainContent %}
+  <div class="navbar-height"></div>
+  <div class="projects-container">
+    <div class="projects-inner-container">
+      <div class="projects-title-screen">
+        <h1>PROJECTS FOR FUN</h1>
+        <p class="project-description-text">These are the kind of things that I usually like to spend my free time on! I enjoy seeing the applications of a lot of the things I learn for myself, and doing projects is a very entertaining form of that. There's a wide mix of things, from entrepreneurship to small hacks to more long term endeavors... And there will definitely be more to come.<p>
+      </div>
+      <div class="projects-project-container">
+        {% for project in projects %}
+          <div class="projects-project-item" id="project-{{ project.id }}">
+            <div class="projects-picture" id="{{ project.abrev }}-project-picture"></div>
+            <div class="projects-text">
+              <h1 class="h1caps">{{ project.name }}</h1>
+              <h1 class="dates">{{ project.time }}</h1>
+              <p class="project-description-text">{{ project.description }}</p>
+              <p class="project-description-text">Check out more info <a href="{{ project.website }}">here.</a></p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
