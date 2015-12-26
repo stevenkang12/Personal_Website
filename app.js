@@ -5,7 +5,7 @@ var express = require('express');
 var configure = require('./config.js');
 
 // Import our controllers
-var homeControllers = require('./controllers/home.js');
+var homeControllers = require('./controllers/index.js');
 var aboutControllers = require('./controllers/about.js');
 var projectsControllers = require('./controllers/projects.js');
 var resumeControllers = require('./controllers/resume.js');
